@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Photo from "@/assets/IMG_9361.jpg";
 import { motion } from "motion/react";
-import { twMerge } from "tailwind-merge";
 import { useEffect, useState } from "react";
 
 const titles = ["Computer Engineer", "Fullstack Developer", "Problem Solver"];

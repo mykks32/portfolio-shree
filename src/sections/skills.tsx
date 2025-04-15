@@ -49,7 +49,7 @@ const skills = [
 const SkillsSection = () => {
     return (
         <section className="px-8 md:px-16 lg:px-32 py-12 max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center text-fuchsia-300">Skills</h2>
+            <h2 className="text-3xl font-bold text-center text-fuchsia-400 mb-8">Skills</h2>
             <div className="space-y-12">
                 {skills.map((group, i) => (
                     <div key={i}>
