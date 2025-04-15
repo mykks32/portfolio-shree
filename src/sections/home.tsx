@@ -59,7 +59,7 @@ export default function Hero() {
 
                     {/* Typing Text */}
                     <h2 className="text-lg sm:text-xl font-bold leading-snug text-white">
-                        I'm a{" "}
+                        I&apos;m a{" "}
                         <span className="text-fuchsia-300">
                             {displayedText}
                             <span className="animate-pulse">|</span>
