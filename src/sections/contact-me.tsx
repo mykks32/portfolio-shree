@@ -69,9 +69,9 @@ export default function ContactForm() {
 
     return (
         <section className="px-8 md:px-16 lg:px-32 py-12 max-w-7xl mx-auto">
-            <div className="flex justify-between">
-                <div className="text-5xl font-bold flex items-center text-center text-fuchsia-400 mb-8">
-                    <span className="text-fuchsia-300">
+            <div className="flex flex-col md:flex-row justify-between">
+                <div className="text-3xl font-bold text-center text-fuchsia-400 mb-8 md:flex md:items-center">
+                    <span className="">
                         {displayedText}
                         <span className="animate-pulse">|</span>
                     </span>
