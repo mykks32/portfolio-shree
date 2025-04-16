@@ -5,7 +5,7 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 export default function Footer() {
     return (
-        <section className="m-12 border-t border-white/15 pt-8">
+        <section className="my-12 border-t border-white/15 pt-8">
             <div className="container mx-auto px-4 md:px-8 lg:px-16">
                 <div className="flex flex-col items-center justify-center gap-2">
                     <div className="flex gap-6">
