@@ -8,9 +8,9 @@ import Button from "@/components/button";
 import { AnimatePresence, motion } from "motion/react";
 
 const navLinks = [
-    { label: "Home", href: "#" },
-    { label: "Features", href: "#features" },
-    { label: "FAQs", href: "#faqs" },
+    { label: "Experience", href: "#experience" },
+    { label: "Skills", href: "#skills" },
+    { label: "Projects", href: "#projects" },
 ];
 
 export default function Navbar() {

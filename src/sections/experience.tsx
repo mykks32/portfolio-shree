@@ -22,7 +22,7 @@ export default function Experience() {
     return (
         <section
             id="experience"
-            className="py-20 px-8 md:px-16 lg:px-32 text-white"
+            className="py-24 px-8 md:px-16 lg:px-32 text-white"
         >
             <div className="max-w-5xl mx-auto">
                 <motion.h2

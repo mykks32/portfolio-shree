@@ -50,7 +50,7 @@ const skills = [
 
 const SkillsSection = () => {
     return (
-        <section className="px-8 md:px-16 lg:px-32 py-12 max-w-7xl mx-auto">
+        <section id="skills" className="px-8 md:px-16 lg:px-32 py-24 max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-fuchsia-400 mb-8">
                 <TypewriterText titles={["Skills"]} />
             </h2>

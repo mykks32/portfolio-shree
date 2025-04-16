@@ -61,7 +61,7 @@ export default function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="py-20 px-8 md:px-16 lg:px-32 max-w-7xl mx-auto"
+      className="py-24 px-8 md:px-16 lg:px-32 max-w-7xl mx-auto"
     >
       <h2 className="text-3xl font-bold text-center text-fuchsia-400 mb-8">
       <TypewriterText titles={["Projects"]} />

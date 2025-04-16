@@ -1,16 +1,15 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Button from "@/components/button";
+import TypewriterText from "@/components/type-write-text";
 
 type FormData = {
     name: string;
     email: string;
     message: string;
 };
-
-const title = "Drop a Message";
 
 export default function ContactForm() {
     const {
@@ -20,31 +19,6 @@ export default function ContactForm() {
         formState: { errors, isSubmitting },
     } = useForm<FormData>();
     const [status, setStatus] = useState<string | null>(null);
-    const [displayedText, setDisplayedText] = useState("");
-    const [isDeleting, setIsDeleting] = useState(false);
-    const [index, setIndex] = useState(0);
-
-    useEffect(() => {
-        const current = title;
-        const speed = isDeleting ? 50 : 100;
-
-        const timeout = setTimeout(() => {
-            if (isDeleting) {
-                setDisplayedText((prev) => prev.slice(0, -1));
-            } else {
-                setDisplayedText((prev) => current.slice(0, prev.length + 1));
-            }
-
-            if (!isDeleting && displayedText === current) {
-                setTimeout(() => setIsDeleting(true), 1000);
-            } else if (isDeleting && displayedText === "") {
-                setIsDeleting(false);
-                setIndex((prev) => prev + 1);
-            }
-        }, speed);
-
-        return () => clearTimeout(timeout);
-    }, [displayedText, isDeleting, index]);
 
     const onSubmit = async (data: FormData) => {
         setStatus(null);
@@ -68,13 +42,10 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="px-8 md:px-16 lg:px-32 py-12 max-w-7xl mx-auto">
+        <section className="px-8 md:px-16 lg:px-32 py-24 max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between">
                 <div className="text-3xl font-bold text-center text-fuchsia-400 mb-8 md:flex md:items-center">
-                    <span className="">
-                        {displayedText}
-                        <span className="animate-pulse">|</span>
-                    </span>
+                    <TypewriterText titles={["Drop a Message"]} />
                 </div>
 
                 {/* <div className="flex justify-center"> */}
