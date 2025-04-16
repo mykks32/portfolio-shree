@@ -3,6 +3,8 @@ import Image from "next/image";
 import Photo from "@/assets/photo.jpg";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 
 const titles = ["Computer Engineer", "Fullstack Developer", "Problem Solver"];
 
@@ -72,6 +74,32 @@ export default function Hero() {
                         solving real-world problems, and constantly evolving
                         through challenges and learning.
                     </p>
+                    <div className="flex gap-4">
+                        <Link
+                            href="mailto:srikri5462ydv@gmail.com"
+                            target="_blank"
+                            className="text-fuchsia-500"
+                            aria-label="Email"
+                        >
+                            <Mail size={24} />
+                        </Link>
+                        <Link
+                            href="https://linkedin.com/in/mykks32"
+                            target="_blank"
+                            className="text-fuchsia-500"
+                            aria-label="LinkedIn"
+                        >
+                            <Linkedin size={24} />
+                        </Link>
+                        <Link
+                            href="https://github.com/mykks32"
+                            target="_blank"
+                            className="text-fuchsia-500"
+                            aria-label="GitHub"
+                        >
+                            <Github size={24} />
+                        </Link>
+                    </div>
                 </motion.div>
 
                 {/* Right: Profile Image */}

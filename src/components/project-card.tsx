@@ -2,6 +2,7 @@ import { FC } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import Button from "./button";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Project {
     title: string;
@@ -19,7 +20,9 @@ const ProjectCard: FC<{ project: Project }> = ({ project }) => {
             <div>
                 {/* Conditionally render the image if it exists */}
                 {project.image && (
-                    <img
+                    <Image
+                        height={1000}
+                        width={1000}
                         src={project.image}
                         alt={project.title}
                         className="w-full border border-white/15 h-48 object-fit rounded-lg mb-4"
