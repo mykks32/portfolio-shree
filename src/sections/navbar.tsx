@@ -139,13 +139,22 @@ export default function Navbar() {
                                             <a
                                                 key={index}
                                                 href={nav.href}
+                                                onClick={() =>
+                                                    setMenuOpen((prev) => !prev)
+                                                }
                                                 className="text-lg font-medium text-white hover:text-fuchsia-400"
                                             >
                                                 {nav.label}
                                             </a>
                                         ))}
                                         <Button variant="primary" size="sm">
-                                            <a href="/cv.pdf" download>
+                                            <a
+                                                href="/cv.pdf"
+                                                onClick={() =>
+                                                    setMenuOpen((prev) => !prev)
+                                                }
+                                                download
+                                            >
                                                 Download CV
                                             </a>
                                         </Button>
