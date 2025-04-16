@@ -117,7 +117,9 @@ export default function Navbar() {
                                         className="hidden md:inline-flex items-center"
                                         size="md"
                                     >
-                                        Download CV
+                                        <a href="/cv.pdf" download>
+                                            Download CV
+                                        </a>
                                     </Button>
                                 </div>
                             </div>
@@ -143,7 +145,9 @@ export default function Navbar() {
                                             </a>
                                         ))}
                                         <Button variant="primary" size="sm">
-                                            Download CV
+                                            <a href="/cv.pdf" download>
+                                                Download CV
+                                            </a>
                                         </Button>
                                     </nav>
                                 </motion.div>
