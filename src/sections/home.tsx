@@ -5,9 +5,10 @@ import { motion } from "motion/react";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import TypewriterText from "@/components/type-write-text";
+import { useIsMdUp } from "@/hooks/use-is-up";
 
 export default function Hero() {
-
+    const isMdUp = useIsMdUp();
     return (
         <section className="max-w-7xl mx-auto px-8 md:px-16 lg:px-32 py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
@@ -81,7 +82,7 @@ export default function Hero() {
                 {/* Right: Profile Image */}
                 <div className="relative flex justify-center md:justify-end">
                     <motion.div
-                        drag
+                        drag={isMdUp}
                         dragConstraints={{
                             left: -10,
                             right: 10,
