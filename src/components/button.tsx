@@ -4,8 +4,8 @@ import { ButtonHTMLAttributes } from "react";
 const classes = cva("border rounded-xl px-6 font-medium", {
   variants: {
     variant: {
-      primary: "bg-fuchsia-400 text-neutral-950",
-      secondary: "border-white",
+      primary: "bg-lime-400 text-neutral-950 hover:scale-105 hover:bg-lime-600 hover:rotate-2",
+      secondary: "border-white/15 hover:scale-105 hover:bg-neutral-600 hover:rotate-2",
     },
     size: {
       sm: "h-10",
