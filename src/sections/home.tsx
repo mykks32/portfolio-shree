@@ -54,7 +54,7 @@ export default function Hero() {
                         transition={{ duration: 1.5, ease: "easeOut" }}
                     >
                              Hi, my name is{" "}
-                        <span className="hero-name text-lime-300 text-4xl md:whitespace-nowrap inline-block uppercase">
+                        <span className="hero-name text-lime-300 text-4xl lg:whitespace-nowrap inline-block uppercase">
                             Shree Krishna Yadav
                         </span>
                     </motion.h1>
