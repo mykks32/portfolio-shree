@@ -2,38 +2,11 @@
 import Image from "next/image";
 import Photo from "@/assets/photo.jpg";
 import { motion } from "motion/react";
-import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
-
-const titles = ["Computer Engineer", "Fullstack Developer", "Problem Solver"];
+import TypewriterText from "@/components/type-write-text";
 
 export default function Hero() {
-    const [index, setIndex] = useState(0);
-    const [displayedText, setDisplayedText] = useState("");
-    const [isDeleting, setIsDeleting] = useState(false);
-
-    useEffect(() => {
-        const current = titles[index % titles.length];
-        const speed = isDeleting ? 50 : 100;
-
-        const timeout = setTimeout(() => {
-            if (isDeleting) {
-                setDisplayedText((prev) => prev.slice(0, -1));
-            } else {
-                setDisplayedText((prev) => current.slice(0, prev.length + 1));
-            }
-
-            if (!isDeleting && displayedText === current) {
-                setTimeout(() => setIsDeleting(true), 1000);
-            } else if (isDeleting && displayedText === "") {
-                setIsDeleting(false);
-                setIndex((prev) => prev + 1);
-            }
-        }, speed);
-
-        return () => clearTimeout(timeout);
-    }, [displayedText, isDeleting, index]);
 
     return (
         <section className="max-w-7xl mx-auto px-8 md:px-16 lg:px-32 py-16">
@@ -53,7 +26,7 @@ export default function Hero() {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1.5, ease: "easeOut" }}
                     >
-                             Hi, my name is{" "}
+                        Hi, my name is{" "}
                         <span className="hero-name text-lime-300 text-4xl lg:whitespace-nowrap inline-block uppercase">
                             Shree Krishna Yadav
                         </span>
@@ -62,10 +35,13 @@ export default function Hero() {
                     {/* Typing Text */}
                     <h2 className="text-lg sm:text-xl font-bold leading-snug text-white">
                         I&apos;m a{" "}
-                        <span className="text-fuchsia-300">
-                            {displayedText}
-                            <span className="animate-pulse">|</span>
-                        </span>
+                        <TypewriterText
+                            titles={[
+                                "Computer Engineer",
+                                "Fullstack Developer",
+                                "Problem Solver",
+                            ]}
+                        />
                     </h2>
 
                     {/* Description */}

@@ -6,6 +6,7 @@ import TutooreeImage from "@/assets/tutooree.png"
 import ChatAppImage from "@/assets/chat_app.png"
 import EcommerceImage from "@/assets/ecommerce.png"
 import RealStateImage from "@/assets/real-state.png"
+import TypewriterText from "@/components/type-write-text";
 
 const projects = [
   {
@@ -62,7 +63,10 @@ export default function Projects() {
       viewport={{ once: true }}
       className="py-20 px-8 md:px-16 lg:px-32 max-w-7xl mx-auto"
     >
-      <h2 className="text-3xl font-bold text-center text-fuchsia-400 mb-8">Projects</h2>
+      <h2 className="text-3xl font-bold text-center text-fuchsia-400 mb-8">
+      <TypewriterText titles={["Projects"]} />
+      </h2>
+      
       <div className="grid gap-8 md:grid-cols-2">
         {projects.map((project, idx) => (
           <ProjectCard key={idx} project={project} />

@@ -4,6 +4,7 @@ import Shadcn from "@/assets/shadcn.png"
 import ReactQuery from "@/assets/react-query.webp"
 import Zustand from "@/assets/zustand.png"
 import Image from "next/image";
+import TypewriterText from "@/components/type-write-text";
 
 const skills = [
     {
@@ -50,7 +51,9 @@ const skills = [
 const SkillsSection = () => {
     return (
         <section className="px-8 md:px-16 lg:px-32 py-12 max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-fuchsia-400 mb-8">Skills</h2>
+            <h2 className="text-3xl font-bold text-center text-fuchsia-400 mb-8">
+                <TypewriterText titles={["Skills"]} />
+            </h2>
             <div className="space-y-12">
                 {skills.map((group, i) => (
                     <div key={i}>

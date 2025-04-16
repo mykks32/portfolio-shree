@@ -1,5 +1,6 @@
 "use client";
 
+import TypewriterText from "@/components/type-write-text";
 import { motion } from "motion/react";
 
 export default function Experience() {
@@ -30,7 +31,7 @@ export default function Experience() {
                     transition={{ duration: 1 }}
                     className="text-3xl font-bold text-center text-fuchsia-400 mb-8"
                 >
-                    Experience
+                    <TypewriterText titles={["Experience"]} />
                 </motion.h2>
 
                 <div className="space-y-12">
