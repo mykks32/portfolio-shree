@@ -25,7 +25,7 @@ const ProjectCard: FC<{ project: Project }> = ({ project }) => {
                         width={1000}
                         src={project.image}
                         alt={project.title}
-                        className="w-full border border-white/15 h-48 object-fit rounded-lg mb-4"
+                        className="w-full border border-white/15 h-48 md:h-60 object-fit rounded-lg mb-4"
                     />
                 )}
 
