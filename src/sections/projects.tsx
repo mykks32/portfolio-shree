@@ -2,6 +2,10 @@
 
 import { motion } from "motion/react";
 import ProjectCard from "../components/project-card";
+import TutooreeImage from "@/assets/tutooree.png"
+import ChatAppImage from "@/assets/chat_app.png"
+import EcommerceImage from "@/assets/ecommerce.png"
+import RealStateImage from "@/assets/real-state.png"
 
 const projects = [
   {
@@ -12,6 +16,7 @@ const projects = [
     github: "https://github.com/mykks32/tutooree-backend",
     live: "https://tutooree-new-landing.vercel.app/",
     status: "Ongoing",
+    image: TutooreeImage.src
   },
   {
     title: "Realtime Chat App",
@@ -21,6 +26,7 @@ const projects = [
     github: "https://github.com/mykks32/chat-app-ts",
     live: "https://chat-app-ts-nine.vercel.app/",
     status: "Ongoing",
+    image: ChatAppImage.src
   },
   {
     title: "E-commerce Website",
@@ -30,7 +36,19 @@ const projects = [
     github:
       "https://github.com/mykks32/ecommerce-website-django-react-rest-Project-1.git",
     live: "https://ecommerce-website-django-react-rest-project-1.vercel.app/",
-    status: "completed"
+    status: "completed",
+    image: EcommerceImage.src
+  },
+  {
+    title: "Real State Website",
+    description:
+      "Implemented core features including property listing, profile management, and inquiry form submissions.",
+    tech: ["React", "Django", "Redux", "Bootstrap", "PostgreSQL"],
+    github:
+      "https://github.com/mykks32/real-state-django-react",
+    live: "https://real-state-django-react.vercel.app/",
+    status: "completed",
+    image: RealStateImage.src
   },
 ];
 
