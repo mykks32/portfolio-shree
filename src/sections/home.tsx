@@ -79,7 +79,7 @@ export default function Hero() {
                 </motion.div>
 
                 {/* Right: Profile Image */}
-                <div className="relative flex justify-end">
+                <div className="relative flex justify-center md:justify-end">
                     <motion.div
                         drag
                         dragConstraints={{
