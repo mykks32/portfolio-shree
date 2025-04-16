@@ -69,7 +69,7 @@ const ProjectCard: FC<{ project: Project }> = ({ project }) => {
                     </Button>
                 )}
                 {project.live && (
-                    <Button variant="primary" size="md" className="flex">
+                    <Button variant="primary" size="md">
                         <Link
                             href={project.live}
                             target="_blank"
