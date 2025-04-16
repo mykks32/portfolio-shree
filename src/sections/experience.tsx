@@ -13,13 +13,16 @@ export default function Experience() {
                 "Implemented key components for both landing page and email verification service at CloudQuish using Next.js, Clerk authentication, ShadCN/ui components, Zustand state management, and Tailwind CSS.",
                 "Improved UI and resolved interface bugs at A5IT, enhancing user experience through navigation optimizations and creating a more intuitive platform.",
                 "Developed and integrated RESTful APIs at A5IT using TypeORM, Node.js, and efficient database queries for improved data management.",
-                "Collaborated with development team using GitHub for task management and version control."
-            ]
-        }
+                "Collaborated with development team using GitHub for task management and version control.",
+            ],
+        },
     ];
 
     return (
-        <section id="experience" className="bg-neutral-950 py-20 px-8 md:px-16 lg:px-32 text-white">
+        <section
+            id="experience"
+            className="py-20 px-8 md:px-16 lg:px-32 text-white"
+        >
             <div className="max-w-5xl mx-auto">
                 <motion.h2
                     initial={{ opacity: 0, y: 50 }}
@@ -37,7 +40,7 @@ export default function Experience() {
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: index * 0.2 }}
-                            className="bg-neutral-900 p-6 rounded-2xl shadow-md border border-white/10"
+                            className="p-6 rounded-2xl shadow-md border border-white/10"
                         >
                             <div className="flex flex-col md:flex-row justify-between mb-4">
                                 <h3 className="text-xl font-semibold text-lime-300">

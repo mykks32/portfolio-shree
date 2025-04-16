@@ -1,3 +1,4 @@
+import ContactForm from "@/sections/contact-me";
 import Experience from "@/sections/experience";
 import Hero from "@/sections/home";
 import Navbar from "@/sections/navbar";
@@ -12,6 +13,7 @@ export default function Home() {
     <Experience />
     <Skills />
     <Projects />
+    <ContactForm />
     </>
   );
 }
