@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Photo from "@/assets/IMG_9361.jpg";
+import Photo from "@/assets/photo.jpg";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 

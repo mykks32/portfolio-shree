@@ -21,8 +21,8 @@ export default function Navbar() {
             <header className="fixed w-full top-0 z-50">
                 <section className="border-b border-white/15">
                     <div className="bg-neutral-950/70 backdrop-blur overflow-hidden">
-                        <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-28">
-                            <div className="grid grid-cols-2 lg:grid-cols-3 py-2 md:pr-2 items-center">
+                        <div className="max-w-7xl mx-auto px-7 md:px-14 lg:px-28">
+                            <div className="grid grid-cols-2 lg:grid-cols-3 py-2 items-center">
                                 {/* Logo */}
                                 <motion.div
                                     initial={{ y: 100, opacity: 0 }}
