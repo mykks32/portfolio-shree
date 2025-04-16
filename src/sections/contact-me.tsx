@@ -62,6 +62,7 @@ export default function ContactForm() {
                 setStatus("Something went wrong. Try again.");
             }
         } catch (err) {
+            console.error("error", err)
             setStatus("Failed to send message.");
         }
     };

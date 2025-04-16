@@ -3,6 +3,7 @@ import BullMq from "@/assets/bullmq.png"
 import Shadcn from "@/assets/shadcn.png"
 import ReactQuery from "@/assets/react-query.webp"
 import Zustand from "@/assets/zustand.png"
+import Image from "next/image";
 
 const skills = [
     {
@@ -60,7 +61,9 @@ const SkillsSection = () => {
                                     key={index}
                                     className="flex flex-col items-center gap-2 p-4 bg-neutral-950 border border-white/15 rounded-xl shadow-md hover:scale-105 transition"
                                 >
-                                    <img
+                                    <Image
+                                        height={100}
+                                        width={100}
                                         src={skill.icon}
                                         alt={skill.name}
                                         className="w-auto h-12"
